@@ -1,0 +1,15 @@
+/node_modules/
+/public/build/
+/.idea/
+/.venv/
+/htmlcov/
+/tmp/
+/test/
+
+__pycache__/
+.DS_Store
+.vscode
+.env
+.coverage
+Pipfile
+*.sql
