@@ -1,6 +1,5 @@
 from collections import Counter
 from dotenv import load_dotenv
-
 import requests
 import os # 環境変数からトークンを取得するなら使う
 
