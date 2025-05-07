@@ -9,8 +9,8 @@ load_dotenv()
 
 # --- ！！！ここを設定してくれよな！！！ ---
 GITHUB_OWNER = "sonecchi"  # 君のGitHubユーザー名 or Organization名だぜ！
-GITHUB_REPO = "uithub" # テキスト化したいプライベートリポジトリの名前！ google-adk
-GITHUB_BRANCH = "main" # ブランチ名 (デフォルトは 'main' だが、違ったら変えてくれ！)
+GITHUB_REPO = "dental" # テキスト化したいプライベートリポジトリの名前！ google-adk
+GITHUB_BRANCH = "master" # ブランチ名 (デフォルトは 'main' だが、違ったら変えてくれ！)
 GITHUB_PATH = "" # 特定のファイルやディレクトリだけ欲しい場合に指定 (例: 'src/main' や 'README.md')。空ならリポジトリ全体！
 GITHUB_TOKEN = os.environ.get("GITHUB_PAT") # 環境変数 GITHUB_PAT から読み込む 強力な権限は不要で、repoの読み取り権限があればOKなはずだぜ！
 
@@ -29,7 +29,7 @@ api_options = {
 
     # --- フィルタリング系 ---
     # 'ext': 'py,js,md',        # この拡張子のファイルだけ含めるぜ！(カンマ区切り) 例: 'py,md'
-    'exclude-ext': 'svg,gitignore,sql,png,json,css,pyc,md', # この拡張子のファイルは除外するぜ！(カンマ区切り) 例: 'lock,log'
+    'exclude-ext': 'gitignore,genignore,gitmodules,sql,out,ini,jpg,svg,ico,png,json,css,pyc,md', # この拡張子のファイルは除外するぜ！(カンマ区切り) 例: 'lock,log'
     # 'dir': '',        # このディレクトリだけ含めるぜ！(カンマ区切り) 例: 'src/app' ※現在機能しないみたい
     'exclude-dir': 'node_modules,*sample*,*sample,sample,./sample,./sample/,/sample,sample/,/sample/,sample*', # このディレクトリは除外するぜ！(カンマ区切り) node_modules とかデカいのは除外しとくと吉！👍 ※現在機能しないみたい
     # 'maxFileSize': 100000,    # ファイルサイズがこれ(バイト単位)より大きいファイルは含めないぜ！デカすぎるファイルはAIも読むの大変だからな！😅
